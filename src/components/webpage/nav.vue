@@ -11,6 +11,7 @@
   <router-link to="/vip" active-class="active" exact>vip</router-link>
   <router-link :to="{name: 'wenda'}" active-class="active" exact>问答</router-link>
   <router-link to="/user" active-class="active" exact>用户</router-link>
+  <router-link to="/axios" active-class="active" exact>axios</router-link>
 </div>
 <transition mode="out-in">
   <router-view></router-view>

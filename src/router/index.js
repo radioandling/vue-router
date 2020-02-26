@@ -10,6 +10,7 @@ import VipThree from '../components/vip_router/three.vue'
 import HomeLeft from '../components/home_router/home_left.vue'
 import HomeRight from '../components/home_router/home_right.vue'
 import MyUser from '../components/router/user.vue'
+import MyAxios from '../components/router/axios.vue'
 
 Vue.use(Router)
 
@@ -65,12 +66,16 @@ var router = new Router({
       path: '/user/:id?',
       component: MyUser,
       props: true
+    },
+    {
+      path: '/axios',
+      component: MyAxios
     }
+
   ]
 })
 // 全局路由钩子函数
 router.beforeEach((to, from, next) => {
-  console.log(to)
   next()
 })
 export default router
