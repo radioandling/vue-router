@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Vuex from 'vuex'
 import MyHome from '../components/router/home.vue'
 import MyCourse from '../components/router/course.vue'
 import MyVip from '../components/router/vip.vue'
@@ -11,8 +12,10 @@ import HomeLeft from '../components/home_router/home_left.vue'
 import HomeRight from '../components/home_router/home_right.vue'
 import MyUser from '../components/router/user.vue'
 import MyAxios from '../components/router/axios.vue'
+import MyGoods from '../components/VuexDemo/GoodsDemo.vue'
 
 Vue.use(Router)
+Vue.use(Vuex)
 
 var router = new Router({
   routes: [
@@ -70,6 +73,10 @@ var router = new Router({
     {
       path: '/axios',
       component: MyAxios
+    },
+    {
+      path: '/vuex',
+      component: MyGoods
     }
 
   ]

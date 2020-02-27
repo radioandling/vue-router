@@ -3,6 +3,7 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import store from './store/index'
 
 Vue.use(axios, VueAxios)
 Vue.config.productionTip = false
@@ -11,5 +12,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })
